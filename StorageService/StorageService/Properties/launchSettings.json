@@ -19,14 +19,24 @@
       }
     },
     "Docker": {
-      "commandName": "Docker",
+      "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
       "environmentVariables": {
-        "ASPNETCORE_URLS": "http://+:80"
+        "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "publishAllPorts": true
+      "applicationUrl": "http://localhost:8001" // Port aligned with docker-compose.override.yml
+    },
+    "StorageService": {
+      "commandName": "Project",
+      "dotnetRunMessages": "true",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:5002;http://localhost:5001"
     }
+
+
   },
   "$schema": "https://json.schemastore.org/launchsettings.json",
   "iisSettings": {
