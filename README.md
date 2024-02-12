@@ -1,58 +1,81 @@
-# Product Management API
+Below is a README template for your GitHub repository for the Pixel Service Management API project. You can save this as `README.md` in the root of your repository. Modify the sections as necessary to fit your project's specifics and any additional instructions or information you wish to include.
 
-## Description
+```markdown
+# Pixel Service Management API
 
-This example project is a solution for the e-commerce merchandising management system, which aims to create a business flow for CRUD transactions in the "Product" domain. The project is developed using .NET 7, Minimal API, Domain-driven Design (DDD), Command Query Responsibility Segregation (CQRS), and MediatR pattern.
+## Overview
 
-It will be enough to run!
+The Pixel Service Management API offers a robust solution designed for e-commerce analytics, focusing on tracking website visits via an embedded pixel. This solution is pivotal for facilitating CRUD operations within the "Product" domain. Leveraging the power of .NET 7 and Minimal APIs, the project architecture is built upon Domain-Driven Design (DDD), Command Query Responsibility Segregation (CQRS), and the MediatR pattern, ensuring scalability and maintainability.
 
-```
+## Features
+
+- **PixelAPI Producer Service**: Captures and forwards essential visit data, such as Referrer and User-Agent headers, along with the visitor's IP address.
+- **Storage Service**: Logs the received data in an append-only file, ensuring data persistence and retrievability for analysis.
+
+## Getting Started
+
+### Prerequisites
+
+- Docker
+- .NET 7 SDK
+
+### Running the Services
+
+To launch the services, execute the following command:
+
+```bash
 docker compose up -d --build
 ```
-and browse api in Swagger
+
+### Accessing the API
+
+Explore the API via Swagger at the following URL:
+
 ```
 http://localhost:8000/swagger/index.html
 ```
 
 ## Technology Stack
 
-- [x] `.Net 7`
-- [x] `Minimal API` 
-- [x] `Open API` with Swagger
-- [x] `Dockerize` with Docker Compose
-- [x] `PostgreSQL`
-- [x] `CQRS` (with MediatR)
-- [x] `Integration Test` with xUnit, TestServer
-- [x] `Fluent Validation`
-- [x] `SOLID` , `Clean Code`
-- [x] `DDD`
+- **.NET 7**: Provides a comprehensive framework for building web applications.
+- **Minimal API**: Utilized for crafting HTTP APIs with minimal dependencies.
+- **Swagger**: Facilitates API documentation and testing.
+- **Docker Compose**: Simplifies the deployment and management of application services.
+- **Carer Module**: for simplicity.
+- **CQRS and MediatR**: Separates read and write operations, enhancing scalability and maintainability.
+- **xUnit & TestServer**: Used for integration testing, ensuring reliability.
+- **Fluent Validation**: Enforces validation rules, ensuring data integrity.
 
----
+```
 
-### Project Structure:
+### Installation
 
-* ProductManagement.API: This project contains the REST API endpoints for CRUD and filtering products.
-* ProductManagement.Application: This project contains the application layer that handles the business logic of the project.
-* ProductManagement.Domain: This project contains the domain models and interfaces.
-* ProductManagement.Infrastructure: This project contains the implementation of the interfaces defined in the domain layer.
+1. Clone the repository:
+   ```
+   git clone <repository-url>
+   ```
+2. Navigate to the project directory:
+   ```
+   cd PixelServiceManagementAPI
+   ```
+3. Start the application:
+   ```
+   docker compose up -d --build
+   ```
 
-### How to run the project:
+## Contributing
 
-> You must install a .Net 6 before run [Download .Net 7](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
+We welcome contributions! Please read our [Contributing Guide](CONTRIBUTING.md) for details on how to submit pull requests and suggestions.
 
-* Clone the repository to your local machine.
-* Open the solution in Visual Studio or any other compatible IDE.
-* Set the ProductManagement.API and Run with docker compose
+## License
 
+This project is licensed under the [MIT License](LICENSE).
 
-### SS
+## Acknowledgments
 
-Test Result
+- The .NET Community
+- Contributors and maintainers of the MediatR library
+- Everyone who has provided feedback and suggestions
+```
 
-<img src="https://github.com/serkanince/ProductManagementAPI/blob/master/test-ss.jpg" alt="System Design" width="650"/>
-
-Swagger
-
-<img src="https://github.com/serkanince/ProductManagementAPI/blob/master/swagger-ss.jpg" alt="System Design" width="650"/>
-
-
+Remember to replace `<repository-url>` with the actual URL of your GitHub repository. Additionally, if you have contributing guidelines or a license file, you should include them in your repository and link them appropriately in the README.
