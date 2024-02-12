@@ -1,0 +1,16 @@
+{
+  "AllowedHosts": "*",
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    },
+    "FilePath": "logs/activitylog.log"
+  },
+  "RabbitMQ": {
+    "Host": "localhost",
+    "VirtualHost": "/",
+    "Username": "guest",
+    "Password": "guest"
+  }
+}
