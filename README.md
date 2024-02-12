@@ -4,7 +4,7 @@
 
 ## Overview
 
-The Pixel Service Management API offers a robust solution designed for e-commerce analytics, focusing on tracking website visits via an embedded pixel. This solution is pivotal for facilitating CRUD operations within the "Product" domain. Leveraging the power of .NET 7 and Minimal APIs, the project architecture is built upon Domain-Driven Design (DDD), Command Query Responsibility Segregation (CQRS), and the MediatR pattern, ensuring scalability and maintainability.
+The Pixel Service Management API focusing on tracking website visits via an embedded pixel. Leveraging the power of .NET 7 and Minimal APIs, the project architecture is built upon Domain-Driven Design (DDD), Command Query Responsibility Segregation (CQRS), and the MediatR pattern, ensuring scalability and maintainability.
 
 ## Features
 
