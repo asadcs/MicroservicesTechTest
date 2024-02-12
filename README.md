@@ -45,36 +45,6 @@ http://localhost:8000/swagger/index.html
 - **xUnit & TestServer**: Used for integration testing, ensuring reliability.
 - **Fluent Validation**: Enforces validation rules, ensuring data integrity.
 
-```
 
-### Installation
 
-1. Clone the repository:
-   ```
-   git clone <repository-url>
-   ```
-2. Navigate to the project directory:
-   ```
-   cd PixelServiceManagementAPI
-   ```
-3. Start the application:
-   ```
-   docker compose up -d --build
-   ```
 
-## Contributing
-
-We welcome contributions! Please read our [Contributing Guide](CONTRIBUTING.md) for details on how to submit pull requests and suggestions.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## Acknowledgments
-
-- The .NET Community
-- Contributors and maintainers of the MediatR library
-- Everyone who has provided feedback and suggestions
-```
-
-Remember to replace `<repository-url>` with the actual URL of your GitHub repository. Additionally, if you have contributing guidelines or a license file, you should include them in your repository and link them appropriately in the README.
