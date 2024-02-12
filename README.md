@@ -1,4 +1,3 @@
-Below is a README template for your GitHub repository for the Pixel Service Management API project. 
 
 ```markdown
 # Pixel Service Management API
