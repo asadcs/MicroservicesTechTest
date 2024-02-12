@@ -1,4 +1,4 @@
-Below is a README template for your GitHub repository for the Pixel Service Management API project. You can save this as `README.md` in the root of your repository. Modify the sections as necessary to fit your project's specifics and any additional instructions or information you wish to include.
+Below is a README template for your GitHub repository for the Pixel Service Management API project. 
 
 ```markdown
 # Pixel Service Management API
